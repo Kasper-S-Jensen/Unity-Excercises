@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         var v3 = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
-        transform.Translate(v3.normalized * (speed * Time.deltaTime));   
+        transform.Translate(v3.normalized * (speed * Time.deltaTime),Space.World);   
 
         
         //inefficient way
