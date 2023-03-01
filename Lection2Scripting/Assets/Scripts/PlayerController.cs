@@ -6,18 +6,28 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField]
    private float speed;
+
+   public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+     
+
     }
 
     // Update is called once per frame
     void Update()
     {
         var v3 = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
-        transform.Translate(v3.normalized * (speed * Time.deltaTime),Space.World);   
+        transform.Translate(v3.normalized * (speed * Time.deltaTime),Space.World);
 
+        
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up*5);
+        }
+        
         
         //inefficient way
         /*
