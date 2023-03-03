@@ -7,10 +7,10 @@ public class ImprovedWASDExample : MonoBehaviour {
 	void Update () {
 		float vertical = Input.GetAxis ("Vertical");
 		if (vertical != 0f ) {
-			transform.Translate (vertical * Vector3.forward * 5f * Time.deltaTime);
+			transform.Translate (Vector3.forward * (vertical * 5f * Time.deltaTime));
 		}
 
-		float horizontal = Input.GetAxis ("Horizontal");
+		float horizontal = Input.GetAxis ("ijklmov");
 		if (horizontal != 0f) {
 			transform.Rotate (Vector3.up, 50f * Time.deltaTime * horizontal);
 		}
