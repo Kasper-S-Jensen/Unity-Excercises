@@ -110,3 +110,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f6757cc47db24a842f9dd93a1f5d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreTxt: {fileID: 98229543106668899, guid: bbde5fdc0ef4c3a49b8eaf102b7eebc2, type: 3}
